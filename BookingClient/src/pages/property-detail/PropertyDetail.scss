@@ -1,0 +1,249 @@
+@import "/src/theme/global-color.scss";
+
+#property-detail-wrapper {
+    ::-webkit-scrollbar {
+        height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px var(--on-primarydisabled); 
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: var(--primary-300); 
+        border-radius: 10px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+        background: var(--primary-500); 
+    }
+    padding: 20px 150px;
+
+    // General information
+    .name {
+        margin: 40px 0 0px !important;
+    }
+    .info {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .listing {
+            margin: 0;
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+            .rate {
+                display: flex;
+                margin-right: 10px;
+            }
+            .comment,
+            .type {
+                margin-right: 10px;
+            }
+            .rate p,
+            .type p {
+                margin: 0;
+            }
+        }
+        .share {
+            margin: 8px 0;
+        }
+    }
+    // Image list
+    #img-list-container {
+        position: relative;
+        height: 380px;
+        .img-list {
+            position: absolute;
+            right: 0;
+            left: 0;
+        }
+        .show-all-img-btn {
+            position: absolute !important;
+            right: 16px;
+            bottom: 8px;
+        }
+    }
+    // Description
+    #property-description {
+        display: flex;
+        margin: 40px 0;
+        .general {
+            flex: 0 0 66.66667%;
+            max-width: 66.66667%;
+            padding-right: 20px;
+            .start-time {
+                font-weight: 600;
+            }
+        }
+        .special {
+            flex: 0 0 33.33333%;
+            max-width: 33.33333%;
+            height: fit-content;
+            padding: 20px 20px 16px;
+            background-color: var(--primary-50);
+            h3, p {
+                margin: 0;
+            }
+            h4 {
+                margin-top: 16px;
+                margin-bottom: 8px;
+            }
+            .special-choose,
+            .special-view {
+                p {
+                    margin-left: 4px;
+                }
+            }
+            .special-choose-item,
+            .special-view-item {
+                display: flex;
+                margin-left: 8px;
+                margin-bottom: 8px;
+            }
+        }
+    }
+    // Room booking
+    #room-booking {
+        margin-bottom: 20px;
+        .body {
+            display: flex;
+            .room-showing {
+                flex: 0 0 66.66667%;
+                max-width: 66.66667%;
+                padding-right: 20px;
+                .room-floor {
+                    margin-bottom: 20px;
+                    .room-cell {
+                        padding: 10px 0;
+                        color:'#000000';
+                    }
+                    .disable-cell{
+                        padding: 10px 0;
+                        color: rgba(0, 0, 0, 0.58);
+                    }
+                    .room-cell:hover {
+                        font-style: italic;
+                        background-color: var(--primary-50);
+                        cursor: pointer;
+                    }
+                }
+            }
+            .room-checkout {
+                flex: 0 0 33.33333%;
+                max-width: 33.33333%;
+                margin-top: 28px;
+                .css-1tu038e-MuiInputBase-root-MuiFilledInput-root,
+                .css-1tu038e-MuiInputBase-root-MuiFilledInput-root:hover,
+                .css-1tu038e-MuiInputBase-root-MuiFilledInput-root.Mui-focused {
+                    background-color: #fff;
+                    padding-right: 0;
+                }
+                .css-1tu038e-MuiInputBase-root-MuiFilledInput-root:after,
+                .css-1tu038e-MuiInputBase-root-MuiFilledInput-root:before,
+                .css-1tu038e-MuiInputBase-root-MuiFilledInput-root:hover:not(.Mui-disabled, .Mui-error):before {
+                    border-bottom: none;
+                }
+                .css-u1i5up-MuiFormControl-root-MuiTextField-root label {
+                    font-size: 0.95rem;
+                    margin-left: -12px;
+                }
+                .css-1u9li0h-MuiInputBase-input-MuiFilledInput-input {
+                    padding-left: 0;
+                }
+                .css-1q7yeio-MuiTableCell-root {
+                    padding-top: 28px;
+                    padding-bottom: 28px;
+                }
+                .start-date {
+                    border-right: 1px solid rgba($color: #000000, $alpha: 0.1);
+                }
+                .start-date,
+                .end-date {
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                }
+                .room-number {
+                    font-weight: 700;
+                    font-size: 1.125rem;
+                    
+                }
+                .unit-price {
+                    font-size: 1.125rem;
+                }
+                .price {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 1.125rem;
+                    margin-top: 10px;
+                    
+                    .quantity {
+                        font-size: 0.75rem;
+                    }
+                    .price-per-room {
+                        font-weight: 600;
+                    }
+                }
+                .total-price {
+                    font-size: 1.3rem;
+                    font-weight: 800;
+                }
+                .booking-btn {
+                    padding-top: 0;
+                }
+            }
+        }
+    }
+    // Review
+    #reviews {
+        .rate-reviews-number {
+            display: flex;
+            .point {
+                display: flex;
+                margin-right: 12px;
+            }
+        }
+        .reviews-body {
+            display: flex;
+            flex-wrap: wrap;
+            .reviews-item {
+                flex: 0 0 33.33333%;
+                max-width: 33.33333%;
+                padding-right: 40px;
+                margin-bottom: 20px;
+                .point-date {
+                    display: flex;
+                    .star {
+                        padding: 2px 2px 2px 0;
+                        margin-right: 8px;
+                    }
+                }
+                .css-2mwnw2-MuiListItem-root {
+                    padding-left: 0;
+                }
+            }
+        }
+        .reviews-button {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+    // Amenity & Policy
+    #amenity,
+    #policy {
+        margin-top: 40px;
+    }
+    // Recommend
+    #recommend {
+        margin-top: 40px;
+        .scroll-list {
+            overflow: auto;
+            .property-list {
+                display: flex;
+                gap: 20px;
+                width: 1500px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+

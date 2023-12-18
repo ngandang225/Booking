@@ -1,0 +1,42 @@
+#sign-up-landlord-wrapper {
+    margin: 40px 150px;
+    position: relative;
+    .title {
+        margin-bottom: 40px;
+        text-align: center;
+    }
+    #sign-up-landlord-body {
+        display: flex;
+        justify-content: space-evenly;
+        margin-bottom: 120px;
+        .body-item {
+            display: flex;
+            flex-direction: column;
+            padding: 24px;
+            flex: 0 0 30%;
+            max-width: 30%;
+            border: 1px solid rgba($color: #000000, $alpha: 0.2);
+            border-radius: 10px;
+            .input {
+                margin-bottom: 16px;
+            }
+            .input:last-child {
+                margin-bottom: 0;
+            }
+            .small-title {
+                text-align: center;
+                margin-bottom: 16px;
+            }
+            .contract-sign {
+                display: flex;
+                align-items: center;
+            }
+            
+        }
+    }
+    .continue-btn {
+        position: absolute;
+        bottom: -80px;
+        right: 0;
+    }
+}

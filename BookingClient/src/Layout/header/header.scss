@@ -1,0 +1,17 @@
+.header {
+  .logo {
+    height: 60px;
+    position: relative;
+    bottom: 12px;
+  }
+  .logo-partner {
+    height: 40px;
+    position: relative;
+    bottom: 4px;
+  }
+  .section {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+}

@@ -1,0 +1,13 @@
+@import "/src/theme/global-color.scss";
+
+.footer {
+  padding: 24px 150px;
+  position: relative;
+  background-color: var(--primary-50);
+  height: 250px;
+  width: 100%;
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+}

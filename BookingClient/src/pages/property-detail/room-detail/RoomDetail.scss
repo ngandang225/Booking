@@ -1,0 +1,15 @@
+#room-detail {
+  ul {
+    margin: 0;
+  }
+  #big-img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    margin-bottom: 4px;
+  }
+  .small-img {
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+  }
+}

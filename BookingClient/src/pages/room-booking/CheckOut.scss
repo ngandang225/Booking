@@ -1,0 +1,16 @@
+@import "/src/theme/global-color.scss";
+#container {
+  margin-left: 180px;
+  margin-right: 136px;
+  margin-top: 38px;
+  #right {
+    width: 65%;
+  }
+  #left {
+    width: 35%;
+  }
+}
+
+#check-out-step {
+  margin-bottom: 78px;
+}

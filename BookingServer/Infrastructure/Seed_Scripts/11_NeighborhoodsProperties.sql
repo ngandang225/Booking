@@ -1,0 +1,1 @@
+insert into NeighborhoodsProperties(Property_Id,Neighborhood_Id) select Properties.Id, Neighborhoods.Id from Properties join Neighborhoods on Properties.Geographycal_Id = Neighborhoods.GeograhycalPlace_Id;

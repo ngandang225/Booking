@@ -1,0 +1,14 @@
+.list-item {
+  max-width: 500px;
+  width: 100%;
+  img {
+    object-fit: cover;
+    aspect-ratio: 5/4;
+    border-radius: 8px 8px 0 0;
+  }
+  .MuiTypography-root {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
